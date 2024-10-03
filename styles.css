@@ -183,7 +183,7 @@ body {
 .pokemon-card .card-header {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 90px;
+  padding: 0 20px 0 80px;
   align-items: center;
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -227,7 +227,7 @@ body {
 .pokemon-card img {
   position: absolute;
   top: 380px; /* Adjust to move the image outside/above the card */
-  left: 65%;
+  left: 55%;
   transform: translateX(-50%); /* Centers the image horizontally */
   z-index: 2;
   width: 250px;
@@ -245,7 +245,7 @@ body {
 .pokemon-card .abilities {
   display: flex;
   flex-direction: column;
-  padding: 40px 90px 20px;
+  padding: 40px 80px 20px;
   text-align: left;
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -263,7 +263,7 @@ body {
 .pokemon-card .abilities li {
   background-color: #f8f8f8;
   margin: 5px 0;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 1px 1px 2px rgb(0, 0, 0);
 
