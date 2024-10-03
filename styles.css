@@ -6,9 +6,9 @@
 }
 
 html {
-  height:100.1%;
+  height: 100.1%;
   overflow-y: scroll;
-  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -34,14 +34,14 @@ body {
 
 .logo {
   margin: 3rem 0;
-  width: 20%;
+  max-width: 100%;
+  width: 350px;
   /*   max-width: 280px;  */
   /*   height: 150px; */
   /*   margin: 10px auto 20px; */
 
-  @media (min-width: 481px) and (max-width: 767px) {
-    width: 50%;
-    padding: 0 15px;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
   }
 }
 
@@ -299,11 +299,11 @@ body {
   padding: 1.5rem 2rem;
 
   @media (min-width: 481px) and (max-width: 767px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
     top: 10px;
     left: 0%;
     width: 18%;
-    padding: .4rem;
+    padding: 0.4rem;
   }
 }
 
