@@ -46,7 +46,15 @@ body {
   align-items: center;
   width: 40%;
 
-  @media (min-width: 414px) {
+  @media(max-width: 1024px) {
+    width: 60%;
+  }
+
+  @media (max-width: 905px) {
+    width: 70%;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
     width: 80%;
   }
 }
