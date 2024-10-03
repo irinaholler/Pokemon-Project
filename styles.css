@@ -46,7 +46,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .logo {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -313,7 +313,7 @@ body {
 @media (min-width: 390px) and (max-width: 767px) {
   .suggestions {
     top: 10px;
-    left: 1%;
+    left: 0%;
     width: 19%;
     padding: 0.4rem;
   }
@@ -341,17 +341,18 @@ body {
   .suggestions div {
     padding: 0.4rem;
     font-size: 0.9rem;  
-    margin-bottom: 0.4rem;
-    box-shadow: 0px 1px 1px #bbb;
+    margin-bottom: 0.3rem;
+    box-shadow: 1px 2px 3px #c9c9c9;
   }
 }
 
 @media (max-width: 390px) {
   .suggestions div {
     padding: 0.3rem;
-    font-size: 0.8rem;  
-    margin-bottom: 0.3rem;
-    box-shadow: 0px 1px 1px #bbb;
+    font-size: 0.7rem;  
+    margin-bottom: 0.2rem;
+    text-align: left;
+    box-shadow: 1px 2px 3px #c9c9c9;
   }
 }
 
