@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 30px 15px;
   text-align: center;
 }
@@ -59,7 +59,7 @@ body {
 
 @media (max-width: 905px) {
   .search-bar {
-    width: 70%;  /* Adjusts to 70% for screens smaller than 905px */
+    width: 70%; /* Adjusts to 70% for screens smaller than 905px */
   }
 }
 
@@ -82,6 +82,11 @@ body {
   border-color: #3c5aa6;
   border-radius: 0.6rem;
   border-width: 0.3rem;
+
+  @media (max-width: 390px) {
+    padding: 0.7rem .8rem;
+    font-size: .9rem;
+  }
 }
 
 #search-input:focus {
@@ -98,6 +103,11 @@ body {
   border-width: 0.3rem;
   background-color: #ffcb05;
   cursor: pointer;
+
+  @media (max-width: 390px) {
+    padding: 0.7rem 1.4rem;
+    font-size: .9rem;
+  }
 }
 
 #search-button:hover {
@@ -131,7 +141,7 @@ body {
 }
 
 .pokemon-card {
-  display: none; /* Hidden by default */
+  display: none;
   width: 500px;
   margin: 4rem auto;
   font-size: 1.1rem;
@@ -170,6 +180,23 @@ body {
   animation-name: gradients;
   box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.1), -8px 16px 16px rgba(0, 0, 0, 0.1),
     -16px 32px 32px rgba(0, 0, 0, 0.15), -32px 64px 64px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 80%;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 390px) {
+    width: 95%;
+    padding: 0.5rem 0;
+    margin: 3rem auto;
+  }
 }
 
 @keyframes gradients {
@@ -213,18 +240,26 @@ body {
   @media (min-width: 481px) and (max-width: 767px) {
     padding: 0 30px 0 50px;
   }
+
+  @media (max-width: 390px) {
+    padding: 0 15px 0 30px;
+  }
 }
 
 .pokemon-card h2 {
   text-align: center;
   font-size: 2.6rem;
   text-transform: capitalize;
-  padding-bottom: 10px;
+  padding: 10px 0;
   color: #ffffff;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 2.4rem;
+  }
+
+  @media (max-width: 390px) {
+    font-size: 1.8rem;
   }
 }
 
@@ -239,6 +274,10 @@ body {
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 2.4rem;
   }
+
+  @media (max-width: 390px) {
+    font-size: 1.8rem;
+  }
 }
 
 .pokemon-card h3 {
@@ -246,13 +285,17 @@ body {
   text-transform: capitalize;
   color: white;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+  @media (max-width: 390px) {
+    font-size: 1.4rem;
+  }
 }
 
 .pokemon-card img {
   position: absolute;
-  top: 380px; /* Adjust to move the image outside/above the card */
+  top: 380px;
   left: 55%;
-  transform: translateX(-50%); /* Centers the image horizontally */
+  transform: translateX(-50%);
   z-index: 2;
   width: 250px;
   height: 250px;
@@ -260,8 +303,17 @@ body {
   text-align: center;
 
   @media (min-width: 481px) and (max-width: 767px) {
-    top: 370px; /* Adjust to move the image outside/above the card */
+    top: 370px;
     left: 68%;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (max-width: 390px) {
+    top: 350px;
+    left: 65%;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -275,12 +327,17 @@ body {
   @media (min-width: 481px) and (max-width: 767px) {
     padding: 30px 50px 10px;
   }
+
+  @media (max-width: 390px) {
+    padding: 20px 30px 5px;
+  }
 }
 
 .pokemon-card .stats ul,
 .pokemon-card .abilities ul {
   list-style-type: none;
   padding: 0;
+  width: 100%;
 }
 
 .pokemon-card .stats li,
@@ -292,7 +349,24 @@ body {
   box-shadow: 1px 1px 2px rgb(0, 0, 0);
 
   @media (min-width: 481px) and (max-width: 767px) {
-    padding: 7px;
+    padding: 8px 15px;
+    margin: 4px 0;
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px;
+    margin: 3px 0;
+    font-size: 0.85rem;
+    width: 100%;
+  }
+
+  @media (max-width: 390px) {
+    padding: 6px 10px;
+    margin: 2px 0;
+    font-size: 0.8rem;
+    width: 100%;
   }
 }
 
@@ -340,7 +414,8 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
   .suggestions div {
     padding: 0.4rem;
-    font-size: 0.9rem;  
+    font-size: 0.9rem;
+    text-align: left;
     margin-bottom: 0.3rem;
     box-shadow: 1px 2px 3px #c9c9c9;
   }
@@ -349,7 +424,7 @@ body {
 @media (max-width: 390px) {
   .suggestions div {
     padding: 0.3rem;
-    font-size: 0.7rem;  
+    font-size: 0.7rem;
     margin-bottom: 0.2rem;
     text-align: left;
     box-shadow: 1px 2px 3px #c9c9c9;
