@@ -358,7 +358,7 @@ body {
     padding: 13px 12px;
     margin: 4px 0;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 400;
     width: 100%;
   }
 
@@ -366,7 +366,7 @@ body {
     padding: 8px 10px;
     margin: 3px 0;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
   }
 }
