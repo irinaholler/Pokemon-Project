@@ -328,7 +328,7 @@ body {
   }
 
   @media (max-width: 390px) {
-    padding: 20px 30px 5px;
+    padding: 20px 30px 30px;
   }
 }
 
@@ -348,25 +348,25 @@ body {
   box-shadow: 1px 1px 2px rgb(0, 0, 0);
 
   @media (min-width: 481px) and (max-width: 767px) {
-    padding: 8px 15px;
-    margin: 4px 0;
+    padding: 10px 15px;
+    margin: 5px 0;
     font-size: 0.9rem;
     width: 90%;
   }
 
   @media (max-width: 480px) {
-    padding: 12px;
-    margin: 3px 0;
+    padding: 13px 12px;
+    margin: 4px 0;
     font-size: 0.85rem;
-    font-weight: 700;
+    font-weight: 600;
     width: 100%;
   }
 
   @media (max-width: 390px) {
-    padding: 6px 10px;
-    margin: 2px 0;
+    padding: 8px 10px;
+    margin: 3px 0;
     font-size: 0.8rem;
-    font-weight: 800;
+    font-weight: 600;
     width: 100%;
   }
 }
