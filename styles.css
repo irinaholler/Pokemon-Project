@@ -34,10 +34,15 @@ body {
 
 .logo {
   margin: 3rem 0;
-  width: 380px;
+  width: 20%;
   /*   max-width: 280px;  */
   /*   height: 150px; */
   /*   margin: 10px auto 20px; */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 50%;
+    padding: 0 15px;
+  }
 }
 
 .search-bar {
@@ -46,7 +51,7 @@ body {
   align-items: center;
   width: 40%;
 
-  @media(max-width: 1024px) {
+  @media (max-width: 1024px) {
     width: 60%;
   }
 
@@ -55,7 +60,7 @@ body {
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
-    width: 80%;
+    width: 90%;
   }
 }
 
