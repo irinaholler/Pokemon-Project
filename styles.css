@@ -308,8 +308,10 @@ body {
   left: 5%;
   width: 10%;
   padding: 1.5rem 2rem;
+}
 
-  @media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .suggestions {
     font-size: 0.8rem;
     top: 10px;
     left: 0%;
@@ -332,10 +334,22 @@ body {
   opacity: 0.5;
 
   display: block;
-  margin-bottom: 0.5rem; /* Add space between suggestions */
+  margin-bottom: 0.5rem;
+}
 
-  @media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .suggestions div {
+    padding: 0.4rem;
+    font-size: 0.9rem;
     margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .suggestions div {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
   }
 }
 
