@@ -5,9 +5,10 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100.1%;
-  overflow-y: scroll;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,8 +16,6 @@ body {
   background: #fcf4ed
     linear-gradient(0deg, #fcf4ed 0%, #dceaf1 50%, #bcdef6 100%) no-repeat;
   text-align: center;
-  margin: 0;
-  padding: 20px;
 
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 1.2rem;
@@ -195,7 +194,7 @@ body {
   @media (max-width: 390px) {
     width: 95%;
     padding: 0.5rem 0;
-    margin: 3rem auto;
+    margin: 2.5rem auto;
   }
 }
 
@@ -293,7 +292,7 @@ body {
 
 .pokemon-card img {
   position: absolute;
-  top: 380px;
+  top: 340px;
   left: 55%;
   transform: translateX(-50%);
   z-index: 2;
@@ -310,7 +309,7 @@ body {
   }
 
   @media (max-width: 390px) {
-    top: 350px;
+    top: 340px;
     left: 65%;
     width: 150px;
     height: 150px;
