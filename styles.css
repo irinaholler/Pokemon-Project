@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  width: auto!important; 
+  overflow-x: hidden!important;
+} 
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #fcf4ed
